@@ -1,0 +1,23 @@
+{
+  "name": "php-app",
+  "version": "1.0.0",
+  "description": "A PHP application running on Glitch with PM2",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lslove10010/cjbfq.git"
+  },
+  "scripts": {
+    "start": "php -S 0.0.0.0:8080 -t public",
+    "pm2-start": "pm2 start ecosystem.config.js --env production"
+  },
+  "dependencies": {
+    "pm2": "^5.1.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
